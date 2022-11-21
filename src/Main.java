@@ -8,7 +8,7 @@ public class Main
 
        int a,b,c,opt;
         System.out.println("Enter the operation");
-        System.out.println("1:Largest\n 2: Smallest\n 3:Prime");
+        System.out.println("1:Largest\n 2: Smallest\n 3:Prime\n 4:Even");
         opt=sc.nextInt();
 
         switch(opt){
@@ -47,6 +47,14 @@ public class Main
                     System.out.println("prime");
                 else
                     System.out.println("not prime");
+            case 4:
+                int number1;
+                System.out.println("enter the number");
+                number1 =sc.nextInt();
+                if(number1%2==0)
+                    System.out.println("Number is even");
+                else
+                    System.out.println("Number is not even");
         }
 
 
