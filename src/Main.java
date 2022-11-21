@@ -8,7 +8,7 @@ public class Main
 
        int a,b,c,opt;
         System.out.println("Enter the operation");
-        System.out.println("1:Largest\n 2: Smallest\n 3:Prime\n 4:Even");
+        System.out.println("1:Largest\n 2: Smallest\n 3:Prime\n 4:Even 5:Reverse");
         opt=sc.nextInt();
 
         switch(opt){
@@ -55,8 +55,23 @@ public class Main
                     System.out.println("Number is even");
                 else
                     System.out.println("Number is not even");
+            case 5:
+                int rev=0,rem=0,number2;
+                System.out.println("enter the number to  reversed");
+                number2 =sc.nextInt();
+                while(number2>0)
+                {
+                    rem =number2%10;
+                    rev =rev*10+rem;
+                    number2 = number2/10;
+                }
+
+                System.out.println("Reverse of the number is "+rev);
+
         }
 
 
     }
-}
+
+
+    }
